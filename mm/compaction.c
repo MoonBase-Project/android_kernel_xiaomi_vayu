@@ -782,7 +782,8 @@ static unsigned long
 isolate_migratepages_block(struct compact_control *cc, unsigned long low_pfn,
 			unsigned long end_pfn, isolate_mode_t isolate_mode)
 {
-	pg_data_t *pgdat = cc->zone->zone_pgdat;
+	struct zone *zone = cc->zone;
+	pg_data_t *pgdat = zone->zone_pgdat;
 	unsigned long nr_scanned = 0, nr_isolated = 0;
 	struct lruvec *lruvec;
 	unsigned long flags = 0;
