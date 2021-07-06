@@ -432,6 +432,9 @@ static inline void cpufreq_resume(void) {}
 #define CPUFREQ_START			(2)
 #define CPUFREQ_STOP			(5)
 #define CPUFREQ_INCOMPATIBLE	(6)
+#ifdef CONFIG_MACH_XIAOMI_SM8150
+#define CPUFREQ_THERMAL			(2)
+#endif
 
 #ifdef CONFIG_CPU_FREQ
 int cpufreq_register_notifier(struct notifier_block *nb, unsigned int list);
