@@ -95,5 +95,3 @@ obj-$(CONFIG_OKL4_LINK_SHBUF)    += okl4-link-shbuf.o
 obj-$(CONFIG_AKM09970)			+= akm09970.o
 obj-$(CONFIG_TI_DRV8846) 		+= drv8846.o
 obj-$(CONFIG_SIMTRAY_STATUS)	+= simtray.o
-obj-$(CONFIG_FORCE_FAST_CHARGE) += fastchg.o
-
