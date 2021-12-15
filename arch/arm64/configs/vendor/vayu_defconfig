@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm64 4.14.256 Kernel Configuration
+# Linux/arm64 4.14.258 Kernel Configuration
 #
 CONFIG_ARM64=y
 CONFIG_64BIT=y
@@ -167,7 +167,7 @@ CONFIG_UTS_NS=y
 # CONFIG_USER_NS is not set
 # CONFIG_PID_NS is not set
 CONFIG_NET_NS=y
-# CONFIG_SCHED_AUTOGROUP is not set
+CONFIG_SCHED_AUTOGROUP=y
 CONFIG_SCHED_TUNE=y
 CONFIG_STUNE_ASSIST=y
 CONFIG_CPUSETS_ASSIST=y
@@ -693,7 +693,7 @@ CONFIG_ARM64_UAO=y
 #
 # Boot options
 #
-CONFIG_CMDLINE="ramoops_memreserve=4M quiet mitigations=off zswap.enabled=1 zswap.compressor=zstd zswap.max_pool_percent=20 zswap.zpool=z3fold elevator=bfq-sq coresight_cpu_debug.enable=0 debug=0 nowatchdog nmi_watchdog=0 no_debug_objects dyndbg=0 module.dyndbg=0"
+CONFIG_CMDLINE="ramoops_memreserve=4M quiet mitigations=off zswap.enabled=1 zswap.compressor=zstd zswap.max_pool_percent=20 zswap.zpool=z3fold elevator=bfq-sq coresight_cpu_debug.enable=0 debug=0 nowatchdog nmi_watchdog=0 no_debug_objects dyndbg=0 module.dyndbg=0 cgroup_disable=pressure"
 # CONFIG_CMDLINE_FROM_BOOTLOADER is not set
 CONFIG_CMDLINE_EXTEND=y
 # CONFIG_CMDLINE_FORCE is not set
