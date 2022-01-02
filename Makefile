@@ -754,7 +754,8 @@ KBUILD_CFLAGS	+= -mcpu=cortex-a55 -mtune=cortex-a55
 ifdef CONFIG_LLVM_POLLY
 KBUILD_CFLAGS	+= -mllvm -polly \
                    -mllvm -polly-parallel -lgomp \
-		   -mllvm -polly-run-inliner \
+                   -mllvm -polly-omp-backend=LLVM \
+                   -mllvm -polly-run-inliner \
 		   -mllvm -polly-ast-use-context \
 		   -mllvm -polly-detect-keep-going \
 		   -mllvm -polly-vectorizer=stripmine \
