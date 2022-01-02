@@ -719,6 +719,7 @@ KBUILD_CFLAGS	+= -mllvm -polly \
                    -mllvm -polly-num-threads=0 \
                    -mllvm -polly-scheduling=dynamic \
                    -mllvm -polly-scheduling-chunksize=1 \
+		   -mllvm -polly-run-dce \
                    -mllvm -polly-run-inliner \
 		   -mllvm -polly-ast-use-context \
 		   -mllvm -polly-detect-keep-going \
