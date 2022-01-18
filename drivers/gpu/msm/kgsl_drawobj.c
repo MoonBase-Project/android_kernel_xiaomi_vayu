@@ -25,18 +25,16 @@
  * goes to zero indicating no more pending events.
  */
 
-#include <linux/uaccess.h>
-#include <linux/list.h>
-#include <linux/compat.h>
+
+#include <linux/slab.h>
 #include <linux/dma-fence-array.h>
-#include "kgsl.h"
+
+#include "kgsl_compat.h"
 #include "kgsl_device.h"
 #include "kgsl_drawobj.h"
 #include "kgsl_sync.h"
-#include "kgsl_trace.h"
-#include "kgsl_compat.h"
 #include "kgsl_timeline.h"
-
+#include "kgsl_trace.h"
 /*
  * Define an kmem cache for the memobj & sparseobj structures since we
  * allocate and free them so frequently
